@@ -1,6 +1,6 @@
 package com.smk.cashier.model;
 
-public class Barang extends Model {
+public class Barang extends Model{
     private String kodeBarang;
     private String namaBarang;
     private int hargaBarang;
@@ -34,11 +34,11 @@ public class Barang extends Model {
         return "Barang{" +
                 "kodeBarang='" + kodeBarang + '\'' +
                 ", namaBarang='" + namaBarang + '\'' +
-                ", hargaBarang=" + hargaBarang +
+                ", hargaBarang='" + hargaBarang + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", lastModified=" + lastModified +
                 ", createdBy='" + createdBy + '\'' +
-                ", undatedBy='" + undatedBy + '\'' +
+                ", updatedBy='" + updatedBy + '\'' +
                 '}';
     }
 }

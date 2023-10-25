@@ -4,11 +4,11 @@ public class User extends Model {
     private String userName;
     private String password;
 
-    public String getUserName() {
+    public String getUsername() {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUsername(String username) {
         this.userName = userName;
     }
 
@@ -19,15 +19,16 @@ public class User extends Model {
     public void setPassword(String password) {
         this.password = password;
     }
+
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
+                "username='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", lastModified=" + lastModified +
                 ", createdBy='" + createdBy + '\'' +
-                ", undatedBy='" + undatedBy + '\'' +
+                ", updatedBy='" + updatedBy + '\'' +
                 '}';
     }
 }

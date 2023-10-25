@@ -2,11 +2,11 @@ package com.smk.cashier.model;
 
 import java.util.Date;
 
-public class Model {
-        protected Date dateCreated;
-        protected Date lastModified;
-        protected String createdBy;
-        protected String undatedBy;
+public abstract class Model {
+    protected Date dateCreated;
+    protected Date lastModified;
+    protected String createdBy;
+    protected String updatedBy;
 
     public Date getDateCreated() {
         return dateCreated;
@@ -32,11 +32,11 @@ public class Model {
         this.createdBy = createdBy;
     }
 
-    public String getUndatedBy() {
-        return undatedBy;
+    public String getUpdatedBy() {
+        return updatedBy;
     }
 
-    public void setUndatedBy(String undatedBy) {
-        this.undatedBy = undatedBy;
+    public void setUpdatedBy(String updatedBy) {
+        this.updatedBy = updatedBy;
     }
 }
