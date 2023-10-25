@@ -1,33 +1,46 @@
 package com.smk.cashier.model;
 
 public class User extends Model {
+    private Integer id;
     private String userName;
     private String password;
 
-    public String getUserName() {
-        return userName;
+    //Getters
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public String getUsername() {
+        return userName;
     }
 
     public String getPassword() {
         return password;
     }
 
+    //Setters
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.userName = userName;
+    }
+
     public void setPassword(String password) {
         this.password = password;
     }
+
     @Override
     public String toString() {
         return "User{" +
-                "userName='" + userName + '\'' +
+                "id=" + id +
+                ", username='" + userName + '\'' +
                 ", password='" + password + '\'' +
-                ", dateCreated=" + dateCreated +
-                ", lastModified=" + lastModified +
-                ", createdBy='" + createdBy + '\'' +
-                ", undatedBy='" + undatedBy + '\'' +
+                ", createdDate=" + createdDate +
+                ", lastModifiedDate=" + lastModifiedDate +
+                ", creator='" + creator + '\'' +
+                ", updater='" + updater + '\'' +
                 '}';
     }
 }

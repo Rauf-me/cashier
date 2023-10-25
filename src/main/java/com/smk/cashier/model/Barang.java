@@ -1,44 +1,39 @@
 package com.smk.cashier.model;
 
 public class Barang extends Model {
-    private String kodeBarang;
-    private String namaBarang;
-    private int hargaBarang;
+    private String kode;
+    private String nama;
+    private int harga;
 
-    public String getKodeBarang() {
-        return kodeBarang;
+    public String getKode() {
+        return kode;
     }
-
-    public void setKodeBarang(String kodeBarang) {
-        this.kodeBarang = kodeBarang;
+    public void setKode(String kode) {
+        this.kode = kode;
     }
-
-    public String getNamaBarang() {
-        return namaBarang;
+    public String getNama() {
+        return nama;
     }
-
-    public void setNamaBarang(String namaBarang) {
-        this.namaBarang = namaBarang;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
-
-    public int getHargaBarang() {
-        return hargaBarang;
+    public int getHarga() {
+        return harga;
     }
-
-    public void setHargaBarang(int hargaBarang) {
-        this.hargaBarang = hargaBarang;
+    public void setHarga(int harga) {
+        this.harga = harga;
     }
 
     @Override
     public String toString() {
         return "Barang{" +
-                "kodeBarang='" + kodeBarang + '\'' +
-                ", namaBarang='" + namaBarang + '\'' +
-                ", hargaBarang=" + hargaBarang +
-                ", dateCreated=" + dateCreated +
-                ", lastModified=" + lastModified +
-                ", createdBy='" + createdBy + '\'' +
-                ", undatedBy='" + undatedBy + '\'' +
+                "kode='" + kode + '\'' +
+                ", nama='" + nama + '\'' +
+                ", harga=" + harga +
+                ", createdDate=" + createdDate +
+                ", lastModifiedDate=" + lastModifiedDate +
+                ", creator='" + creator + '\'' +
+                ", updater='" + updater + '\'' +
                 '}';
     }
 }

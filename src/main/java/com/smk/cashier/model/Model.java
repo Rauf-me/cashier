@@ -2,41 +2,41 @@ package com.smk.cashier.model;
 
 import java.util.Date;
 
-public class Model {
-        protected Date dateCreated;
-        protected Date lastModified;
-        protected String createdBy;
-        protected String undatedBy;
+public abstract class Model {
+    protected Date createdDate;
+    protected Date lastModifiedDate;
+    protected String creator;
+    protected String updater;
 
-    public Date getDateCreated() {
-        return dateCreated;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setDateCreated(Date dateCreated) {
-        this.dateCreated = dateCreated;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public Date getLastModified() {
-        return lastModified;
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
     }
 
-    public void setLastModified(Date lastModified) {
-        this.lastModified = lastModified;
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 
-    public String getCreatedBy() {
-        return createdBy;
+    public String getCreator() {
+        return creator;
     }
 
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
+    public void setCreator(String creator) {
+        this.creator = creator;
     }
 
-    public String getUndatedBy() {
-        return undatedBy;
+    public String getUpdater() {
+        return updater;
     }
 
-    public void setUndatedBy(String undatedBy) {
-        this.undatedBy = undatedBy;
+    public void setUpdater(String updater) {
+        this.updater = updater;
     }
 }
